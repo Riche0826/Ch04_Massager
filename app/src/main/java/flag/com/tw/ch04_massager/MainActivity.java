@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(motionEvent.getAction() == MotionEvent.ACTION_DOWN) vb.vibrate(5000);
                 else if(motionEvent.getAction() == MotionEvent.ACTION_UP) vb.cancel();
+                else if(motionEvent.getAction() == MotionEvent.ACTION_MOVE) vb.vibrate(5000);
 
                 return false;
             }
